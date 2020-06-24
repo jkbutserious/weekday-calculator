@@ -10,9 +10,25 @@ _DETAILED DESCRIPTION_
 
 ## Specs
 
-1. OBJECTIVE
-Sample Input: 
-Sample Output: 
+1. Program should create a Date object with month, day, and year properties
+Sample Input: 1, 1, 1900
+Sample Output: newDate {Jan, 1, 1900}
+
+2. Program should be able to output the day of the week for past dates
+Sample Input: 1, 1, 1900
+Sample Output: Monday {Date.now - Date.get}
+
+3. Program should be able to output the day of the week for future dates
+Sample Input: 1, 1, 2100
+Sample Output: Friday
+
+4. Program should notify users when they enter an invalid date
+Sample Input: 2, 29, 2003
+Sample Output: That's not a real date, idiot.
+
+5. Program will use a mathematical formula to determine the day of the week
+Sample Input: "08, 01, 2242"
+Sample Output: Monday
 
 ## Setup/Installation Requirements
 
