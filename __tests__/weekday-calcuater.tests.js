@@ -6,7 +6,7 @@ describe('Weekday', () => {
 
   beforeEach(() => {
     reusableDate = new Date(70, 0, 1);
-    reusableDate2 = new Date(70, 0, 2)
+    reusableDate2 = new Date(70, 0, 4)
   });
 
   test('Should correctly create a date that can return a year, month, and date', () => {
