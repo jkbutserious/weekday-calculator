@@ -1,4 +1,4 @@
-import { getWeekday } from './../src/weekday-calculator.js'
+import { getWeekday, checkValidDate } from './../src/weekday-calculator.js'
 
 describe('Weekday', () => {
 
@@ -8,5 +8,9 @@ describe('Weekday', () => {
 
   test("Should correctly return the day of the week for days in the far future", () => {
     expect(getWeekday(2242, 0, 1)).toEqual("Saturday");
+  })
+
+  test("Should correctly return a true for a valid date", () => {
+    expect(checkValidDate(1970, 1, 1)).toEqual(true);
   })
 })

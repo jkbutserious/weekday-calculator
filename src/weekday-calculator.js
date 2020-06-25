@@ -15,3 +15,23 @@ export function getWeekday(year, month, day) {
 
   return weekdays[newDate];
 }
+
+export function checkValidDate(year, month, day) {
+  if (month > 12) {
+    return false;
+  } 
+  else if (day > 31) {
+    return false;
+  } 
+  else if (month === 4 && day > 30 || month === 6 && day > 30 || month === 9 && day > 30 || month === 11 && day > 30) {
+    return false;
+  } 
+  else if (month === 2 && day > 28) {
+    if (year % 4 !== 0 && day >= 29 || year % 100 === 0 && day >= 29 || year % 400 !== 0 && day >= 29) {
+      return false;
+    } 
+  } 
+  else {
+    return 0;
+  }
+}
