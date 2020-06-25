@@ -12,5 +12,9 @@ describe('Weekday', () => {
 
   test("Should correctly return a true for a valid date", () => {
     expect(checkValidDate(1970, 1, 1)).toEqual(true);
+    expect(checkValidDate(1970, 2, 29)).toEqual(false);
+    expect(checkValidDate(1970, 4, 31)).toEqual(false);
+    expect(checkValidDate(1970, 1, 32)).toEqual(false);
+    expect(checkValidDate(1970, 13, 31)).toEqual(false);
   })
 })

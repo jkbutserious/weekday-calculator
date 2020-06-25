@@ -32,6 +32,6 @@ export function checkValidDate(year, month, day) {
     } 
   } 
   else {
-    return 0;
+    return true;
   }
 }
