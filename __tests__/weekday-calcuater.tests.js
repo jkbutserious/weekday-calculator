@@ -6,4 +6,7 @@ describe('Weekday', () => {
     expect(getWeekday(1970, 0, 1)).toEqual("Thursday");
   });
 
+  test("Should correctly return the day of the week for days in the far future", () => {
+    expect(getWeekday(2242, 0, 1)).toEqual("Friday")
+  })
 })
