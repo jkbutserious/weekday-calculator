@@ -10,8 +10,8 @@
 
 export function getWeekday(year, month, day) {
   const newDate = new Date(year, month, day).getDay();
-  // const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 
-  return newDate;
+  return weekdays[newDate];
 }
