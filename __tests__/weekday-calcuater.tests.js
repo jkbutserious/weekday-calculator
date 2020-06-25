@@ -16,5 +16,6 @@ describe('Weekday', () => {
     expect(checkValidDate(1970, 4, 31)).toEqual(false);
     expect(checkValidDate(1970, 1, 32)).toEqual(false);
     expect(checkValidDate(1970, 13, 31)).toEqual(false);
+    expect(checkValidDate(2020, 2, 29)).toEqual(true);
   })
 })

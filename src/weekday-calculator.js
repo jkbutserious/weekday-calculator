@@ -27,9 +27,13 @@ export function checkValidDate(year, month, day) {
     return false;
   } 
   else if (month === 2 && day > 28) {
-    if (year % 4 !== 0 && day >= 29 || year % 100 === 0 && day >= 29 || year % 400 !== 0 && day >= 29) {
-      return false;
+    // if (year % 4 !== 0 && day >= 29 || year % 100 === 0 && day >= 29 || year % 400 !== 0 && day >= 29) {
+    if (year % 4 === 0 && year % 100 !== 0 && day === 29 || year % 400 === 0 && day === 29) {
+      return true;
     } 
+    else {
+      return false;
+    }
   } 
   else {
     return true;
