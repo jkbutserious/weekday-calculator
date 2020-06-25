@@ -2,28 +2,33 @@
 <html>
 
 <head>
-  <script type="text/javascript" src="bundle.js"></script>
+  <!-- <script type="text/javascript" src="bundle.js"></script> -->
   <title>Project Name</title>
 </head>
 
 <body>
-  <!-- Some sort of HTML that directly correlates with your main.js -->
-
-  <!-- Uncomment the following code to check that bootstrap is working! -->
-
-  <!-- <div class="card">
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top"
-      src="https://images.unsplash.com/photo-1534278931827-8a259344abe7?ixlib=rb-1.2.1&w=1000&q=80"
-      alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This should be a working card class!
-      </p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+  <div class="container">
+    <div>
+      <form id="date-form">
+        <div class="form-group">
+          <label for="month">Month:</label>
+          <input id="month" class="form-control" type="number" required placeholder="MM" max="12" maxlength="2">
+        </div>
+        <div class="form-group">
+          <label for="day">Day:</label>
+          <input id="day" class="form-control" type="number" required placeholder="DD" max="31" maxlength="2">
+        </div>
+        <div class="form-group">
+          <label for="year">Year:</label>
+          <input id="year" class="form-control" type="number" required placeholder="YYYY" maxlength="4">
+        </div>
+        <button type="submit">Check the date</button>
+      </form>
+    </div>
+    <div id="output">
+      <h3><span id="user-weekday"></span></h3>
     </div>
   </div>
-</div> -->
 </body>
 
 </html>
